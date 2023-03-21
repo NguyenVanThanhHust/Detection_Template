@@ -18,18 +18,22 @@ _C = CN()
 
 _C.MODEL = CN()
 _C.MODEL.DEVICE = "cuda"
-_C.MODEL.NUM_CLASSES = 1
+_C.MODEL.NUM_CLASSES = 80
 
 # -----------------------------------------------------------------------------
 # INPUT
 # -----------------------------------------------------------------------------
 _C.INPUT = CN()
 # Size of the image during training
-_C.INPUT.FOLDER = "../crack_segmentation_dataset"
+_C.INPUT.FOLDER = "../Datasets/COCO"
 # Size of the image during training
-_C.INPUT.SIZE_TRAIN = 448
+_C.INPUT.MAX_SIZE_TRAIN = 1500
+_C.INPUT.MIN_SIZE_TRAIN = 848
+
 # Size of the image during test
-_C.INPUT.SIZE_TEST = 448
+_C.INPUT.MAX_SIZE_TEST = 1500
+_C.INPUT.MIN_SIZE_TEST = 848
+
 # Minimum scale for the image during training
 _C.INPUT.MIN_SCALE_TRAIN = 0.5
 # Maximum scale for the image during test
