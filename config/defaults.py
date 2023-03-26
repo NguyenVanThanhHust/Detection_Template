@@ -25,7 +25,8 @@ _C.MODEL.NUM_CLASSES = 80
 # -----------------------------------------------------------------------------
 _C.INPUT = CN()
 # Size of the image during training
-_C.INPUT.FOLDER = "../Datasets/COCO"
+_C.INPUT.IMG_FOLDER = "../Datasets/COCO/"
+_C.INPUT.ANN_FILE = "../Datasets/COCO/"
 # Size of the image during training
 _C.INPUT.MAX_SIZE_TRAIN = 1500
 _C.INPUT.MIN_SIZE_TRAIN = 848
